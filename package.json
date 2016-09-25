@@ -1,0 +1,19 @@
+{
+  "name": "normalize.jss",
+  "version": "1.0.0",
+  "description": "An auto-updating JSS port of normalize.css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thancock20/normalize.jss"
+  },
+  "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
+  "license": "MIT",
+  "dependencies": {
+    "jss-cli": "^3.0.0",
+    "normalize.css": "*"
+  }
+}
