@@ -4,11 +4,11 @@
 
 This is version 5.0.0 of normalize.css converted to JSS using the [JSS-CLI](https://github.com/cssinjs/cli)
 
- ### Use case:
+ ## Use case:
 
  If you're using JSS for styling, and want to use normalize.css as a base. However, you don't want to setup Webpack to load CSS just for the one file.
 
- ### Getting started
+ ## Getting started
 
  Simply install into your project with npm:
 
