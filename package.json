@@ -1,6 +1,6 @@
 {
   "name": "normalize.jss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "normalize.css converted to and exported as a JSS object",
   "main": "normalize.js",
   "scripts": {
