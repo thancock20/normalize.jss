@@ -5,7 +5,8 @@
   "main": "normalize.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "jss convert ./node_modules/normalize.css/normalize.css -f cjs > ./normalize.js"
+    "build": "jss convert ./node_modules/normalize.css/normalize.css -f cjs > ./normalize.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
