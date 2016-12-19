@@ -16,14 +16,14 @@ Simply install into your project with npm:
 npm install --save normalize.jss
 ```
 
-Then import and load with JSS:
+Then import and load Normalize as a global style with JSS:
 
 ```js
 import Normalize from 'normalize.jss';
 import jss from 'jss';
 
-const sheet = jss.createStyleSheet(Normalize, { named: false });
+const sheet = jss.createStyleSheet({ '@global': Normalize });
 sheet.attach();
 ```
 
-Note the use of `named:false` to make the styles global.
+The [jss-global](https://github.com/cssinjs/jss-global) plugin must be installed and enabled to use the `@global` declaration above.
