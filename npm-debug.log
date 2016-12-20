@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/home/todd/.npm-packages/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.5
+3 info using node@v5.12.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/todd/workspace/normalize.jss',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/todd/.npm/normalize.jss/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /home/todd/.npm correctMkdir not in flight; initializing
+10 info lifecycle normalize.jss@1.0.2~prepublish: normalize.jss@1.0.2
+11 verbose lifecycle normalize.jss@1.0.2~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle normalize.jss@1.0.2~prepublish: PATH: /home/todd/.npm-packages/lib/node_modules/npm/bin/node-gyp-bin:/home/todd/workspace/normalize.jss/node_modules/.bin:/usr/bin:/home/todd/.rbenv/shims:/home/todd/.rbenv/bin:/home/todd/.npm-packages/bin:/home/todd/.local/share/umake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+13 verbose lifecycle normalize.jss@1.0.2~prepublish: CWD: /home/todd/workspace/normalize.jss
+14 silly lifecycle normalize.jss@1.0.2~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle normalize.jss@1.0.2~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/todd/.npm/normalize.jss/1.0.2/package.tgz',
+16 verbose tar pack   '/home/todd/workspace/normalize.jss' ]
+17 verbose tarball /home/todd/.npm/normalize.jss/1.0.2/package.tgz
+18 verbose folder /home/todd/workspace/normalize.jss
+19 verbose addLocalTarball adding from inside cache /home/todd/.npm/normalize.jss/1.0.2/package.tgz
+20 verbose correctMkdir /home/todd/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd normalize.jss@1.0.2
+22 verbose afterAdd /home/todd/.npm/normalize.jss/1.0.2/package/package.json not in flight; writing
+23 verbose correctMkdir /home/todd/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/todd/.npm/normalize.jss/1.0.2/package/package.json written
+25 silly publish { name: 'normalize.jss',
+25 silly publish   version: '1.0.2',
+25 silly publish   description: 'normalize.css converted to and exported as a JSS object',
+25 silly publish   main: 'normalize.js',
+25 silly publish   scripts:
+25 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+25 silly publish      build: 'jss convert ./node_modules/normalize.css/normalize.css -f cjs > ./normalize.js',
+25 silly publish      prepublish: 'npm run build' },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/thancock20/normalize.jss.git' },
+25 silly publish   author:
+25 silly publish    { name: 'Todd Hancock',
+25 silly publish      email: 'thancock20@hotmail.com',
+25 silly publish      url: 'http://www.toddhancock.net/' },
+25 silly publish   license: 'MIT',
+25 silly publish   dependencies: { 'jss-cli': '^3.0.0', 'normalize.css': '*' },
+25 silly publish   readme: '# normalize.jss\n\n[normalize.css](https://github.com/necolas/normalize.css) converted to and exported as a [JSS](https://github.com/cssinjs/jss) object.\n\nThis is version 5.0.0 of normalize.css converted to JSS using the [JSS-CLI](https://github.com/cssinjs/cli)\n\n### Use case:\n\n If you\'re using JSS for styling, and want to use normalize.css as a base. However, you don\'t want to setup Webpack to load CSS just for the one file.\n\n### Getting started\n\nSimply install into your project with npm:\n\n```\nnpm install --save normalize.jss\n```\n\nThen import and load Normalize as a global style with JSS:\n\n```js\nimport Normalize from \'normalize.jss\';\nimport jss from \'jss\';\n\nconst sheet = jss.createStyleSheet({ \'@global\': Normalize });\nsheet.attach();\n```\n\nThe [jss-global](https://github.com/cssinjs/jss-global) plugin must be installed and enabled to use the `@global` declaration above.\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '5f3262c9f71c7565751ba3ce77196292a5d06f89',
+25 silly publish   bugs: { url: 'https://github.com/thancock20/normalize.jss/issues' },
+25 silly publish   homepage: 'https://github.com/thancock20/normalize.jss#readme',
+25 silly publish   _id: 'normalize.jss@1.0.2',
+25 silly publish   _shasum: '3a058be6b37c3059d2253c5b44dff74d43ab5d48',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name normalize.jss
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'normalize.jss',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'normalize.jss',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/normalize.jss
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /home/todd/.npm/normalize.jss/1.0.2/package.tgz
+34 verbose request uri https://registry.npmjs.org/normalize.jss
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 6:33:03 PM
+37 verbose request using bearer token for auth
+38 verbose request id b2a217610a22ff5d
+39 http request PUT https://registry.npmjs.org/normalize.jss
+40 http 403 https://registry.npmjs.org/normalize.jss
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Tue, 20 Dec 2016 00:33:05 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-dfw1837-DFW',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1482193984.392174,VS0,VE676',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /home/todd/.npm/registry.npmjs.org/normalize.jss on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : normalize.jss
+44 verbose stack     at makeError (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+44 verbose stack     at Request._callback (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+44 verbose stack     at Request.self.callback (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:199:22)
+44 verbose stack     at emitTwo (events.js:100:13)
+44 verbose stack     at Request.emit (events.js:185:7)
+44 verbose stack     at Request.<anonymous> (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+44 verbose stack     at emitOne (events.js:95:20)
+44 verbose stack     at Request.emit (events.js:182:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/home/todd/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:963:12)
+45 verbose statusCode 403
+46 verbose pkgid normalize.jss
+47 verbose cwd /home/todd/workspace/normalize.jss
+48 error Linux 3.19.0-32-generic
+49 error argv "/usr/bin/nodejs" "/home/todd/.npm-packages/bin/npm" "publish"
+50 error node v5.12.0
+51 error npm  v3.8.5
+52 error code E403
+53 error "You cannot publish over the previously published version 1.0.2." : normalize.jss
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
